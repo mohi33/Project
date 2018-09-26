@@ -37,7 +37,7 @@ class registerController extends controller {
                 if(errors.length == 0) 
                     return true;
                 
-                req.flash('errors' , messages)
+                req.flash('errors' , messages);
                 return false;
             })
             .catch(err => console.log(err));
